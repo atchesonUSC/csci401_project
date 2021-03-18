@@ -1,7 +1,8 @@
 from django.shortcuts import render
 
 
-def main_menu_0(request):
-    menu_page = 'main_menu_0.html'
+# About USC TeleHELP
+def main_menu(request, page):
+    menu_page = 'main_menu_' + page + '.html'
     args = {}
     return render(request, menu_page, args)
