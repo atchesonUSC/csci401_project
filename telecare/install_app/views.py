@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def install(request, page):
+    page = 'install_ ' + page + '.html'
+    args = {}
+    return render(request, page, args)
