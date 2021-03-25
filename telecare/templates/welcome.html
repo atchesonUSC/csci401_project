@@ -12,15 +12,24 @@
 <body style="background-color:#8F001B">
 
 <h1 style="color:#FFB400; text-align:center; font-size:600%"> USC TeleHELP </h1>
-<div class="center">
-    <img src="{% static 'stethoscope.gif' %}" alt="stethoscope" id="stethoscope" style="
-    max-width:40%;
-    "/>
+
+<br>
+
+<p style="text-align:center; color:#FFB400; font-size:200%">Telemedicine Appointment Assistance</p>
+
+<br>
+<br>
+
+<div class="center" style="margin-left:40%; margin-right:80%;">
+    <img src="{% static 'stethoscope.gif' %}" alt="stethoscope" id="stethoscope" width="25%" height="20%"/>
 </div>
+
+<br>
+<br>
+<br>
+
 <div class="text-center">
-    <button type="button" class="btn btn-warning" style="font-size:150%; margin-top:30%">
-        <a href="{% url 'menu/'}">Press here for Help Center</a>
-    </button>
+    <a href="{% url 'about_telehelp' %}" class="btn btn-warning btn-lg" style="width:30%;"><strong>Press Here to Enter</strong></a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
