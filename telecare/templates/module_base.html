@@ -25,9 +25,9 @@ Body content
 <!-- Navigation buttons -->
 <div class="text-center">
     <div class="btn-group d-flex" role="group">
-        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">&larr; Back</a>
-        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
-        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">{% block right_btn %}[Right]{% endblock %}</a>
+        <a href="{% block left_btn_url %}left_btn_url{% endblock %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">&larr; Back</a>
+        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
+        <a href="{% block right_btn_url %}right_btn_url{% endblock %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">{% block right_btn_txt %}[Right]{% endblock %}</a>
     </div>
 </div>
 

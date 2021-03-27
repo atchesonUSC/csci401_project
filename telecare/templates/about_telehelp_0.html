@@ -9,8 +9,16 @@ Welcome! We're here to help
 About Us
 {% endblock %}
 
-{% block right_btn %}
+{% block right_btn_txt %}
 Done!
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'welcome' %}
 {% endblock %}
 
 {% block content %}
