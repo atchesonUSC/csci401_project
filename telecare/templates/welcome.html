@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="{% static 'welcome.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Welcome</title>
-
 </head>
 <body style="background-color:#FFFFFF">
 
@@ -22,7 +21,7 @@
 <h3 style="text-align:center;">~ Use your finger or mouse to press a button to learn more ~</h3><br>
 <hr style="width:80%; text-align:center;" color="#8a8a8a">
 <div class="text-center">
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Welcome! We're here to help</strong></a><br><br>
+    <a href="{% url 'about_telehelp' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Welcome! We're here to help</strong></a><br><br>
     <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Installing USC TeleCARE</strong></a><br><br>
     <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>3 &rarr; Internet Check</strong></a><br><br>
     <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>4 &rarr; Browser Check</strong></a><br><br>

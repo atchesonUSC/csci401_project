@@ -25,4 +25,5 @@ urlpatterns = [
     path('install/', include('install_app.urls')),
     path('help_center/', include('help_app.urls')),
     path('cam_mic/', include('camera_mic_app.urls')),
+    path('about_telehelp/', include('about_telehelp_app.urls')),
 ]

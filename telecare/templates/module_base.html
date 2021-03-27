@@ -1,0 +1,44 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>[Title]</title>
+</head>
+<body>
+
+<!-- Header -->
+<div class="jumbotron text-center" style="background-color:#8F001B">
+    <h1 style="color:#FFB400; text-align:center; font-size:400%"> USC TeleHELP </h1>
+    <h3 style="text-align:center; color:#FFB400; font-size:150%">[Module Name]</h3>
+</div>
+
+<!-- Content will get inserted here -->
+{% block content %}
+Body content
+{% endblock %}
+
+<!-- Navigation buttons -->
+<div class="text-center">
+    <div class="btn-group d-flex" role="group">
+        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">[Left]</a>
+        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
+        <a href="..." class="btn btn-warning w-50" style="margin:5px; font-size:250%;">[Right]</a>
+    </div>
+</div>
+
+<br>
+
+<!-- Footer -->
+<footer class="footer" style="background-color:#8F001B;">
+    <div class="container">
+        <br><br>
+    </div>
+</footer>
+
+</body>
+</html>
