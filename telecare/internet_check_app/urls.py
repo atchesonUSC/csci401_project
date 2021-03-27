@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path('<page>/', views.internet, name='internet')
+    path('<page>/', views.internet, name='internet_check')
 ]

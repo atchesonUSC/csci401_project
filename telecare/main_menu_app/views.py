@@ -3,7 +3,7 @@ from django.shortcuts import render
 
 # About USC TeleHELP
 def about_telehelp(request):
-    page = 'main_menu_0.html'
+    page = 'example_main_menu_0.html'
     args = {}
     return render(request, page, args)
 
