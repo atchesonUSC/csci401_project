@@ -14,23 +14,20 @@ Next &rarr;
 {% endblock %}
 
 {% block left_btn_url %}
-{% url 'waiting_room' 1 %}
+{% url 'waiting_room' 0 %}
 {% endblock %}
 
 {% block right_btn_url %}
-{% url 'waiting_room' 2 %}
+{% url 'welcome' %}
 {% endblock %}
 
 {% block content %}
 <div class="container text-center block_content">
     <br>
-    <h1>2. Click "Enter Waiting Room"</h1>
+    <h1>Email demonstration</h1>
     <hr style="width:50%; text-align:center;" color="#8a8a8a">
     <br>
-    <p>In the email, scroll down until you see this button:</p>
-    <img src="{% static 'email_link.PNG' %}" alt="Email link example" class="img-fluid email_link">
-    <p>Click or tap on the button in your email to be connected to your doctor.</p>
-    <p>The next page demonstrates how to find the button in your email.</p>
+    <img src="{% static 'email_link_demo.gif' %}" alt="Email demo" class="img-fluid email_demo">
     <br>
 </div>
 <br>

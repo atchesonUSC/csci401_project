@@ -14,5 +14,14 @@
 
 .email_header {
   border-radius: 5px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+
+.email_link {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.email_demo {
+  margin-bottom: 15px;
 }
