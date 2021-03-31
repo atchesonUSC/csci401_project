@@ -1,0 +1,48 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Browser Check
+{% endblock %}
+
+{% block mod_name %}
+Browser Check
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'browser_check' 3 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'browser_check' 5 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Opening Chrome or Firefox Browser</h1>
+    <hr style="width:75%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>Now that we are at the main screen of our computer, let's <strong>look for a picture</strong> that looks like either
+        the Google Chrome picture or the Mozilla Firefox picture.
+        <br>
+        <br>
+        <img src="{% static 'chrome-firefox-logos.jpg' %}" alt="Chrome and Firefox Logos" style="width:40%;">
+        <br>
+        <br>
+        Once we find a picture that looks like either one of these, we can <strong>click on the picture</strong> to open
+        the Google Chrome or Mozilla Firefox internet browser.
+        <br>
+        <br>
+        <img src="{% static 'browser_ex_img_1.png' %}" alt="Google Chrome Desktop Icon" style="width:40%;">
+        <br>
+        <br>
+        Press <strong>"Next"</strong> to learn more!
+    </p><br>
+</div>
+<br>
+{% endblock %}

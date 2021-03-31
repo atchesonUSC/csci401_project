@@ -1,0 +1,45 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Browser Check
+{% endblock %}
+
+{% block mod_name %}
+Browser Check
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'browser_check' 0 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'browser_check' 3 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Connecting with Computer</h1>
+    <hr style="width:75%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>If you plan on connecting to your USC TeleCARE appointment with a
+        computer, you must use the <strong>Google Chrome</strong> or <strong>Mozilla Firefox</strong>
+        browsers for connecting to your appointment through the internet.
+        <br>
+        <br>
+        Here's what they look like...
+        <br>
+        <br>
+        <img src="{% static 'chrome-firefox-logos.jpg' %}" alt="Chrome and Firefox Logos" style="width:40%;">
+        <br>
+        <br>
+        Press <strong>"Next"</strong> to learn more!
+    </p><br>
+</div>
+<br>
+{% endblock %}
