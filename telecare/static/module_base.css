@@ -1,6 +1,11 @@
 /* Styling for all modules */
 
-.text-center p {
+.block_content {
+  background-color: #cccccc;
+  border-radius: 15px;
+}
+
+.block_content p {
   font-size:200%;
 }
 
@@ -8,5 +13,6 @@
 /* Styling for waiting_room_app */
 
 .email_header {
-  margin-bottom: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
