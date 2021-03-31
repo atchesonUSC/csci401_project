@@ -1,0 +1,12 @@
+/* Styling for all modules */
+
+.text-center p {
+  font-size:200%;
+}
+
+
+/* Styling for waiting_room_app */
+
+.email_header {
+  margin-bottom: 15px;
+}
