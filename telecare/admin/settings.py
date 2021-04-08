@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'welcome_app',
-    'about_telecare_app',
+    'about_telehelp_app',
     'browser_check_app',
     'camera_mic_app',
     'help_app',
