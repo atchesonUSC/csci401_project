@@ -6,7 +6,7 @@ Finding your waiting room
 {% endblock %}
 
 {% block mod_name %}
-Finding your waiting room
+Finding Your Waiting Room
 {% endblock %}
 
 {% block right_btn_txt %}
@@ -14,7 +14,7 @@ Next &rarr;
 {% endblock %}
 
 {% block left_btn_url %}
-{% url 'waiting_room' 1 %}
+{% url 'waiting_room' 0 %}
 {% endblock %}
 
 {% block right_btn_url %}
@@ -24,13 +24,14 @@ Next &rarr;
 {% block content %}
 <div class="container text-center block_content">
     <br>
-    <h1>2. Click "Enter Waiting Room"</h1>
+    <h1>Click "Enter Waiting Room"</h1>
     <hr style="width:50%; text-align:center;" color="#8a8a8a">
     <br>
-    <p>In the email, scroll down until you see this button:</p>
-    <img src="{% static 'email_link.PNG' %}" alt="Email link example" class="img-fluid email_link">
-    <p>Click or tap on the button in your email to be connected to your doctor.</p>
-    <p>The next page demonstrates how to find the button in your email.</p>
+    <p>In the email, <strong>scroll down</strong> until you see this button:</p><br>
+    <img src="{% static 'email_link.PNG' %}" alt="Email link example" class="img-fluid email_link"><br><br><br>
+    <p><strong>Click or tap</strong> on the button in your email to be <strong>directed to your appointment</strong>
+        on the USC TeleCARE service.</p><br>
+    <p>Click the <strong>"Next"</strong> button below to see <strong>how to find</strong> the waiting room button in your email.</p>
     <br>
 </div>
 <br>
