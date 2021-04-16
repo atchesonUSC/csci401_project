@@ -28,4 +28,5 @@ urlpatterns = [
     path('about_telehelp/', include('about_telehelp_app.urls')),
     path('browser/', include('browser_check_app.urls')),
     path('waiting_room/', include('waiting_room_app.urls')),
+    path('using_telecare/', include('using_telecare_app.urls')),
 ]
