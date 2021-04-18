@@ -1,5 +1,7 @@
 {% load static %}
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,35 +19,33 @@
     </span>
     <span>
         <h1 style="color:#FFB400; text-align:center; font-size:600%">USC TeleHELP</h1>
-        <h3 style="text-align:center; color:#FFB400; font-size:200%">Telemedicine Appointment Assistance</h3>
     </span>
 </div>
 
+
 <hr style="width:80%; text-align:center;" color="#8a8a8a">
-<h1 style="text-align:center;">Before Visit Day Checklist</h1><br>
-<h3 style="text-align:center;">~ Use your finger or mouse to press a button to learn more ~</h3><br>
+<h1 style="text-align:center;">Have you used USC TeleCARE before</h1><br>
 <hr style="width:80%; text-align:center;" color="#8a8a8a">
+
+
 <div class="text-center">
-    <a href="{% url 'about_telehelp' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Welcome!</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Installing USC TeleCARE</strong></a><br><br>
-    <a href="{% url 'internet_check' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>3 &rarr; Internet Check</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>4 &rarr; Browser Check</strong></a><br><br>
-    <a href="Cam_Mic_0.html" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>5 &rarr; Camera and Microphone Check</strong></a>
+    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; YES</strong></a><br><br>
+    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; NO</strong></a><br><br>
 </div>
 
 <br>
 <br>
 
-<hr style="width:80%; text-align:center;" color="#8a8a8a">
-<h1 style="text-align:center;">On Visit Day Checklist</h1><br>
-<h3 style="text-align:center;">~ Use your finger or mouse to press a button to learn more ~</h3><br>
-<hr style="width:80%; text-align:center;" color="#8a8a8a">
-<div class="text-center">
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Finding Your Waiting Room</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Using USC TeleCARE</strong></a>
-</div>
 
 <br>
+<div class="text-center">
+    <div class="btn-group d-flex" role="group">
+        <a href="{% block left_btn_url %}left_btn_url{% endblock %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">&larr; Back</a>
+        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
+        <a href="{% block right_btn_url %}right_btn_url{% endblock %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">{% block right_btn_txt %}Next{% endblock %}</a>
+    </div>
+</div>
+
 <br>
 <br>
 <br>
