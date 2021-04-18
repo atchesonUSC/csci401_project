@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 
 def cam_mic_user_status(request):
-    page = 'cam_mic_status.html'
+    page = 'Cam_Mic_.html'
     args = {}
     return render(request, page, args)
 
