@@ -1,0 +1,34 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Finding Your Waiting Room
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 0 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>About TeleCARE</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>USC TeleCARE is a separate application you will use to connect to your doctor. You will need to install it before your appointment.</p><br>
+    <p>To proceed, you will need to know if you are using an Android or iOS device. Click the button matching the device you will use at your appointment.</p><br>
+</div>
+<br>
+{% endblock %}
