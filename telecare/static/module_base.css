@@ -25,3 +25,23 @@
 .email_demo {
   margin-bottom: 15px;
 }
+
+
+/* Styling for install_app */
+
+.example_iphone {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-height: 500px;
+}
+
+.example_android {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.ios_app_install {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
