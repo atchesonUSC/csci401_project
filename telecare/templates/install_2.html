@@ -1,0 +1,28 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 1 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Is my device iOS or Android?</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>iOS devices are all made by Apple and will have the Apple logo somewhere.<br>
+    All iPhones are iOS. For example, look at the back of your smartphone:</p><br>
+    <p>Android devices come in many styles. To check if your device is Android, look at its Settings. It will say Android like in the below example:</p><br>
+    <p>If your device doesn't match either description you may have something else. Unfortunately, TeleCARE is only available for iOS and Android - you will need a device compatible with TeleCARE or a computer for your appointment.</p><br>
+</div>
+<br>
+{% endblock %}
