@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('welcome_app.urls')),
     path('main_menu/', include('main_menu_app.urls')),
-    path('internet/', include('internet_check_app.urls')),
+    path('internet_check/', include('internet_check_app.urls')),
     path('install/', include('install_app.urls')),
     path('help_center/', include('help_app.urls')),
     path('cam_mic/', include('camera_mic_app.urls')),
