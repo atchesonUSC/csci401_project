@@ -9,6 +9,15 @@
   font-size:200%;
 }
 
+.standard_img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.standard_video {
+  margin-bottom: 15px;
+}
+
 
 /* Styling for waiting_room_app */
 
@@ -35,13 +44,24 @@
   max-height: 500px;
 }
 
-.example_android {
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.ios_app_install {
+.app_store_button {
   border-radius: 5px;
   margin-bottom: 15px;
   max-width: 400px;
+}
+
+.ios_telecare_icon {
+  margin-bottom: 15px;
+  max-height: 100px;
+}
+
+.android_telecare_icon {
+  margin-bottom: 15px;
+  max-height: 140px;
+}
+
+.android_telecare_permissions {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-height: 700px;
 }

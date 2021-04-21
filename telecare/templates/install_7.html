@@ -1,0 +1,32 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 6 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Using USC TeleCARE (Android)</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>The first time you open USC TeleCARE you may need to enable your camera and microphone. See the video below for how to do this.</p><br>
+    <img src="{% static 'android_telecare_permissions.gif' %}" alt="GIF of opening TeleCARE and enabling permissions" class="img-fluid android_telecare_permissions"><br><br>
+    <p>All the instructions are below in video form:</p><br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item standard_video" src="https://www.youtube.com/embed/M1Avvp3eZpY" alt="YouTube video 'How to Install USC TeleCARE on Your iPhone'"></iframe>
+    </div>
+    <br>
+    <p>You will need to open USC TeleCARE at your appointment time. To learn more, review the <strong>Using USC TeleCARE</strong> lesson.</p><br>
+</div>
+<br>
+{% endblock %}

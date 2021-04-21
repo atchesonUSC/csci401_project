@@ -1,0 +1,38 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 5 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'install' 7 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Using USC TeleCARE (Android)</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>To open TeleCARE, look for and tap on the icon on your device. It will look like this:</p><br>
+    <img src="{% static 'telecare_app_icon_android.png' %}" alt="TeleCARE icon" class="img-fluid android_telecare_icon"><br><br>
+    <p>If you are having trouble finding it, you can also open TeleCARE by tapping the "Get TeleCARE" button below:</p><br>
+    <a href="https://play.google.com/store/apps/details?id=com.usc.telecare.patient" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Get TeleCARE</strong></a><br><br>
+    <p>and then tapping on the "Open" button, as seen below:</p><br>
+    <img src="{% static 'android_app_open.png' %}" alt="App Store open button" class="img-fluid app_store_button"><br><br>
+</div>
+<br>
+{% endblock %}
