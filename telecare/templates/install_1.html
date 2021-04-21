@@ -1,0 +1,29 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 0 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>About TeleCARE</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>USC TeleCARE is a separate application you will use to connect to your doctor. You will need to install it before your appointment.</p><br>
+    <p>To proceed, you will need to know if you are using an Android or iOS device. Click the button matching the device you will use at your appointment.</p><br>
+    <a href="{% url 'install' 3 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>iOS</strong></a><br><br>
+    <a href="{% url 'install' 5 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Android</strong></a><br><br>
+    <a href="{% url 'install' 2 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:">How can I tell?</a><br><br>
+</div>
+<br>
+{% endblock %}

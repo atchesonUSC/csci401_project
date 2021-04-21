@@ -27,9 +27,9 @@
 <hr style="width:80%; text-align:center;" color="#8a8a8a">
 <div class="text-center">
     <a href="{% url 'about_telehelp' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Welcome!</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Installing USC TeleCARE</strong></a><br><br>
+    <a href="{% url 'install' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Installing USC TeleCARE</strong></a><br><br>
     <a href="{% url 'internet_check' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>3 &rarr; Internet Check</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>4 &rarr; Browser Check</strong></a><br><br>
+    <a href="{% url 'browser_check' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>4 &rarr; Browser Check</strong></a><br><br>
     <a href="{% url 'cam_mic' %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>5 &rarr; Camera and Microphone Check</strong></a>
 </div>
 
@@ -41,8 +41,8 @@
 <h3 style="text-align:center;">~ Use your finger or mouse to press a button to learn more ~</h3><br>
 <hr style="width:80%; text-align:center;" color="#8a8a8a">
 <div class="text-center">
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Finding Your Waiting Room</strong></a><br><br>
-    <a href="..." class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Using USC TeleCARE</strong></a>
+    <a href="{% url 'waiting_room' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; Finding Your Waiting Room</strong></a><br><br>
+    <a href="{% url 'using_telecare' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Using USC TeleCARE</strong></a>
 </div>
 
 <br>
@@ -52,10 +52,10 @@
 
 <footer class="footer" style="background-color:#8F001B;">
     <div class="container center">
-        <br><span class="center" style="color:#FFB400; text-align:center; font-size:150%">For questions or technical help, please contact the USC TeleCARE Support Team</span><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:160%">Mon - Fri, 8AM - 5PM PST &rarr; <strong>(833) 532-5872</strong></span><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:160%">After Hours, Holidays, or Weekends &rarr; <strong>(888) 585-8019</strong></span><br><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:300%"><strong>Keck Medicine of USC</strong></span><br>
+        <br><span class="center" style="color:#FFB400; text-align:center; font-size:185%">For assistance, please contact the USC TeleCARE Support Team</span><br><br>
+        <span class="center" style="color:#FFB400; text-align:center; font-size:170%"><strong>Mon. &ndash; Fri., 8AM &ndash; 5PM PST &rarr; (833) 532 - 5872</strong></span><br>
+        <span class="center" style="color:#FFB400; text-align:center; font-size:170%"><strong>After Hours, Holidays, or Weekends &rarr; (888) 585 - 8019</strong></span><br><br>
+        <span class="center" style="color:#FFB400; text-align:center; font-size:350%"><strong>Keck Medicine of USC</strong></span><br>
     </div>
 </footer>
 

@@ -1,0 +1,35 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Finding Your Waiting Room
+{% endblock %}
+
+{% block mod_name %}
+Finding Your Waiting Room
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'waiting_room' 1 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Check Your Email</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>Look for an email with <strong>Keck Medicine of USC</strong> and <strong>USC TeleCARE</strong> written
+        at the top, as in the picture shown here...</p><br>
+    <img src="{% static 'email_header.PNG' %}" alt="Email header example" class="img-fluid standard_img"><br><br>
+</div>
+<br>
+{% endblock %}

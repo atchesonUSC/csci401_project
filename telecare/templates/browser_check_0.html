@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Browser Check</title>
+</head>
+<body>
+
+<!-- Header -->
+<div class="jumbotron text-center" style="background-color:#8F001B">
+    <h1 style="color:#FFB400; text-align:center; font-size:600%">USC TeleHELP</h1>
+    <hr style="width:80%; text-align:center;" color="#FFB400">
+    <h3 style="text-align:center; color:#FFB400; font-size:300%">Browser Check</h3>
+</div>
+
+<!-- Content will get inserted here -->
+<div class="container text-center" style="background-color:#cccccc; border-radius:15px;">
+    <br>
+    <h1>Connecting to Your Appointment</h1>
+    <hr style="width:60%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p style="font-size:200%;">With USC TeleCARE, you can <strong>connect</strong> to your
+        virtual appointment from a computer, smartphone or tablet!
+    </p>
+    <br>
+    <p style="font-size:200%;">How do you plan on attending your appointment?</p><br>
+    <a href="{% url 'browser_check' 1 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>I will use a computer!</strong></a><br><br>
+    <a href="{% url 'browser_check' 2 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%;"><strong>I will use a smartphone or tablet!</strong></a><br><br><br><br>
+</div>
+<br>
+
+<!-- Navigation buttons -->
+<div class="text-center">
+    <div class="btn-group d-flex" role="group">
+        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">&larr; Back</a>
+        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
+    </div>
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="footer" style="background-color:#8F001B;">
+    <div class="container text-center">
+        <br>
+        <span style="color:#FFB400; font-size:200%;">Keck Medicine of USC</span>
+        <br>
+        <br>
+    </div>
+</footer>
+
+</body>
+</html>

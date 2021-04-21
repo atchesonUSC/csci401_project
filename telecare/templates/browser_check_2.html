@@ -1,0 +1,46 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Browser Check
+{% endblock %}
+
+{% block mod_name %}
+Browser Check
+{% endblock %}
+
+{% block right_btn_txt %}
+Done!
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'browser_check' 0 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Connecting with Smartphone or Tablet</h1>
+    <hr style="width:75%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>If you plan on connecting to your USC TeleCARE appointment with a
+        smartphone or tablet, then you are <strong>done</strong> with the Browser Check lesson!
+    </p>
+    <br>
+    <img src="{% static 'telecare-app-logo.png' %}" alt="USC TeleCARE App Logo" style="width:20%;">
+    <br>
+    <br>
+    <br>
+    <p>Please make sure you review the <strong>"Installing USC TeleCARE"</strong> lesson if you have
+        not already. You will need to have the USC TeleCARE app installed.
+    </p>
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+{% endblock %}

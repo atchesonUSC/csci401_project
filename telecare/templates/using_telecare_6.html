@@ -1,0 +1,72 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 1 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 7 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Consent Notice</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> Next, you will be asked if you would like to consent to
+        <br>participating in a telemedicine consultation.
+        <br>
+        <br>After reviewing the consent notice, you may press
+        <br>the <strong>Sign</strong> button.
+    </p>
+    <br>
+    <img src="{% static 'img-2.png' %}" alt="usc telecare consent page" style="width:60%;">
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 2:</strong> On the next page, as shown below, you may draw your signature
+        <br>on the dashed ("sign here") by using your mouse to verify your consent.
+        <br>
+        <br><strong style="font-size:110%;">Tip:</strong> You can draw by holding down the button on your mouse and
+        <br>moving the mouse pointer above the dashed line.
+    </p>
+    <br>
+    <img src="{% static 'img-3.png' %}" alt="usc telecare signature page" style="width:60%;">
+    <br>
+    <br>
+    <p>
+        After signing, you may click the <strong>Sign</strong> button to proceed.
+        <br>If you would like to redo your signature, you may click the
+        <br><strong>Clear</strong> button.
+    </p>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 3:</strong> On the next screen, you will indicate if you, the individual
+        <br>completing the check-in, are the person for whom the appointment is for.
+    </p>
+    <br>
+    <img src="{% static 'img-4.png' %}" alt="usc telecare consent form continued" style="width:60%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+{% endblock %}

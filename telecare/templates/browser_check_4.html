@@ -1,0 +1,60 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Browser Check
+{% endblock %}
+
+{% block mod_name %}
+Browser Check
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'browser_check' 3 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'browser_check' 5 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Opening Chrome or Firefox Browser</h1>
+    <hr style="width:75%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>Now that we are at the main screen of our computer, we can open the browser.</p>
+    <br>
+    <br>
+    <h2>If You Have An Apple Computer</h2>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>We can click on the <strong>search picture</strong> in the top right and type "Google Chrome"
+        into the search bar. Next, when Google Chrome appears, we can <strong>click on it</strong>, like in the demonstration
+        here:
+    </p>
+    <br>
+    <img src="{% static 'open-chrome.gif' %}" alt="Opening Google Chrome on Apple Computer" style="width:60%;">
+    <br>
+    <br>
+    <br>
+    <h2>If You Have A Microsoft Windows Computer</h2>
+    <hr style="width:70%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>We can find the Google Chrome picture on the main screen. Double-click the picture in order to open Google Chrome,
+        like in the demonstration below:
+    </p>
+    <br>
+    <img src="{% static 'open-chrome-win.gif' %}" alt="Opening Google Chrome on Apple Computer" style="width:60%;">
+    <br>
+    <br>
+    <br>
+    <p>Press <strong>"Next"</strong> to learn more!</p>
+    <br>
+</div>
+<br>
+{% endblock %}

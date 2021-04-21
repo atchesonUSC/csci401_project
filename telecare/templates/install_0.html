@@ -1,0 +1,36 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'install' 1 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Do I need USC TeleCARE?</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p><strong>If you are using a computer to meet with your doctor:</strong>
+      <br>You do not need to do anything in this step! Click "Home" to return to the checklist. Make sure to review the "<strong>Browser Check</strong>" lesson.</p><br>
+    <p><strong>If you are using some other device (such as a smartphone or tablet):</strong><br>
+      You will need the TeleCARE app on your device before your appointment. Click "Next" to learn more.</p><br>
+</div>
+<br>
+{% endblock %}

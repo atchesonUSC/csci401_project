@@ -1,0 +1,50 @@
+/* Styling for all modules */
+
+.block_content {
+  background-color: #cccccc;
+  border-radius: 15px;
+}
+
+.block_content p {
+  font-size:200%;
+}
+
+.standard_img {
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.standard_video {
+  margin-bottom: 15px;
+}
+
+
+/* Styling for install_app */
+
+.example_iphone {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-height: 500px;
+}
+
+.app_store_button {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+.ios_telecare_icon {
+  margin-bottom: 15px;
+  max-height: 100px;
+}
+
+.android_telecare_icon {
+  margin-bottom: 15px;
+  max-height: 140px;
+}
+
+.android_telecare_permissions {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  max-height: 700px;
+}

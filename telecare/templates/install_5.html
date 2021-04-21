@@ -1,0 +1,39 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Installing USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'install' 1 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'install' 6 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Installing USC TeleCARE (Android)</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>While using the device you will use for your appointment, follow the steps to get USC TeleCARE.</p><br>
+    <p>1. Tap on the "Get TeleCARE" button at the bottom of this page.</p><br>
+    <p>2. Tap on the "Install" button. It will look like this:</p><br>
+    <img src="{% static 'android_app_install.png' %}" alt="Play Store install button" class="img-fluid app_store_button"><br><br>
+    <p>Now that you have seen the steps, tap the button below to get started.</p><br>
+    <a href="https://play.google.com/store/apps/details?id=com.usc.telecare.patient" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Get TeleCARE</strong></a><br><br>
+    <p>Tap "Next" to learn more about USC TeleCARE.</p><br>
+</div>
+<br>
+{% endblock %}

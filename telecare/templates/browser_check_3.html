@@ -1,0 +1,49 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Browser Check
+{% endblock %}
+
+{% block mod_name %}
+Browser Check
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'browser_check' 1 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'browser_check' 4 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Opening Chrome or Firefox Browser</h1>
+    <hr style="width:75%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>Let's see <strong>an example</strong> on how we can open a Google Chrome or Mozilla Firefox internet
+        browser. We'll practice with Google Chrome.
+        <br>
+        <br>
+        While the example images and steps shown might not exactly match your computer, the
+        general process should be very similar.
+        <br>
+        <br>
+        First, let's go to the <strong>main screen of our computer</strong>, the one that normally
+        appears when we turn it on. This might look like the below screen on an Apple computer.
+        <br>
+        <br>
+        <img src="{% static 'browser_ex_img_0.png' %}" alt="Desktop" style="width:50%;">
+        <br>
+        <br>
+        Press <strong>"Next"</strong> to learn more!
+    </p><br>
+</div>
+<br>
+{% endblock %}

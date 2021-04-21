@@ -1,0 +1,66 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 0 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 6 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Opening USC TeleCARE</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        For accessing your appointment on USC TeleCARE using your
+        <br>computer, please follow the below steps.
+    </p>
+    <br>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> Visit your email inbox. Search for a USC TeleCARE
+        <br>appointment message having subject "Check-in online".
+        <br><br>Click on the <strong>Enter Waiting Room</strong> button at the bottom.
+    </p>
+    <br>
+    <img src="{% static 'email_link_demo.gif' %}" alt="email link demo" style="width:50%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        You will be directed to USC TeleCARE for checking in
+        <br>to your appointment.
+    </p>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 2:</strong> On the newly opened page (which looks like the below picture),
+        <br>you may click the <strong>Check-In</strong> button to begin the check-in process.
+    </p>
+    <br>
+    <img src="{% static 'img-1.png' %}" alt="usc telecare welcome page" style="width:70%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+{% endblock %}
