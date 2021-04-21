@@ -1,0 +1,59 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Done!
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 7 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Waiting for Your Physician</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <div class="container text-center block_content" style="background-color:#909396;">
+        <h2><strong>Important!</strong></h2>
+        <hr style="width:25%; text-align:center;" color="#292929">
+        <p>
+            Once you have reached this point, please <strong>DO NOT</strong> leave the
+            <br>USC TeleCARE screen.
+            <br>
+            <br>
+            Leaving the screen can affect the connection to your appointment.
+        </p>
+        <br>
+    </div>
+    <br>
+    <br>
+    <p>
+        With the previous steps complete, you will now be asked to wait
+        <br>for your physician to join your waiting room.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'img-6.png' %}" alt="waiting room" style="width:60%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        All set! Press <strong>Done!</strong> to return Home
+    </p>
+    <br>
+</div>
+{% endblock %}

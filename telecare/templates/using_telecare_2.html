@@ -1,0 +1,92 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 0 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 3 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Opening USC TeleCARE</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>If you would like to connect to your appointment using a
+        smartphone or tablet, you may do so by following
+        one of the below approaches.
+    </p>
+    <br>
+    <br>
+    <h2><strong>Option 1: Email</strong></h2>
+    <hr style="width:25%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> If you do not have the USC TeleCARE app installed, or if you are
+        <br>unsure, please review the <strong>Installing USC TeleCARE</strong> lesson.
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 2:</strong> Visit your email inbox. Search for a USC TeleCARE
+        <br>appointment message having subject "Check-in online".
+        <br>
+        <br>
+        <img src="{% static 'img-8.png' %}" alt="Enter Waiting Button from Phone Email" style="width:30%;">
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 3:</strong> Using your finger, tap on the <strong>Enter Waiting Room</strong>
+        <br>button at the bottom of the email.
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 4:</strong> A new page will automatically open, as shown below.
+        <br>
+        <br>
+        <img src="{% static 'img-9.png' %}" alt="" style="width:30%;">
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 5:</strong> After pressing <strong>Confirm</strong>, a message will appear. Press the word
+        <br><strong>Open</strong> to begin your appointment in the USC TeleCARE app.
+        <br>
+        <br>
+        <img src="{% static 'img-13.png' %}" alt="Confirm open message" style="width:30%;">
+        <br>
+    </p>
+    <br>
+    <br>
+    <h2><strong>Option 2: Text Message</strong></h2>
+    <hr style="width:35%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> Visit your text messaging app and look for a message from
+        <br>the following phone number <strong>&rarr;</strong> (855) 849 - 1058
+        <br>
+        <br>
+        <img src="{% static 'img-23.png' %}" alt="USC TeleCARE appointment text message" style="width:60%;">
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 2:</strong> Using your finger, press on the blue text. A new page will
+        <br>automatically open. From here, please refer to steps 4 and 5 from above.
+    </p>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+<br>
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 2 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 4 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Welcome and Consent</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>To check in to your appointment, you may tap the <strong>Check-In</strong> button.
+        <br>
+        <br>
+        <img src="{% static 'img-14.png' %}" alt="usc telecare welcome page" style="width:30%;">
+        <br>
+        <br>Next, you will be asked if you would like to consent to
+        <br>participating in a telemedicine consultation.
+        <br>
+        <br>You may use your finger to scroll up and down
+        <br>on your device screen to review the consent form.
+        <br>
+        <br>
+        <img src="{% static 'img-15.png' %}" alt="usc telecare consent page" style="width:30%;">
+        <br>
+        <br>If you would like to consent to telemedicine consultation
+        <br>and proceed with your appointment, you may
+        <br>use your finger to tap the <strong>Sign</strong> button.
+        <br>
+        <br>
+        <img src="{% static 'img-16.png' %}" alt="usc telecare sign page" style="width:30%;">
+        <br>
+        <br>To verify your consent, you may draw your signature
+        <br>on the dashed line ("sign here") using your finger.
+        <br>
+        <br>To redo your signature, you may tap the <strong>Clear</strong> button.
+        <br>When complete, you may press the <strong>Sign</strong> button.
+    </p>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+{% endblock %}

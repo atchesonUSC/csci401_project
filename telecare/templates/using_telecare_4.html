@@ -1,0 +1,77 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 3 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 5 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Testing Your Connection</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <div class="container text-center block_content" style="background-color:#909396;">
+        <h2><strong>Important!</strong></h2>
+        <hr style="width:25%; text-align:center;" color="#292929">
+        <p>
+            Once you have reached this point, please <strong>DO NOT</strong> leave the
+            <br>USC TeleCARE app.
+            <br>
+            <br>Leaving the app can affect the connection to your appointment.
+        </p>
+        <br>
+    </div>
+    <br>
+    <br>
+    <p>You will now be placed in your appointment waiting room. Your
+        <br>physician will connect to your waiting room once they are ready.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'img-17.png' %}" alt="usc telecare waiting test connection" style="width:30%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        While in the waiting room, you may test your internet connection.
+        <br>
+        <br>To do so, you may press the blue <strong>Test Your Connection</strong> button.
+        <br>
+        <br>If the below message appears, tap the <strong>OK</strong> button so that
+        <br>your physician will be able to hear you.
+    </p>
+    <br>
+    <img src="{% static 'img-18.png' %}" alt="usc telecare enable microphone" style="width:30%;">
+    <br>
+    <br>
+    <p>If the below message appears, tap the <strong>OK</strong> button so that
+        <br>your physician will be able to see you.
+    </p>
+    <br>
+    <img src="{% static 'img-19.png' %}" alt="usc telecare enable camera" style="width:30%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends "module_base.html" %}
+{% load static %}
+
+{% block title %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block mod_name %}
+Using USC TeleCARE
+{% endblock %}
+
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'using_telecare' 6 %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'using_telecare' 8 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Computer Setup</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        We can now setup the computer's <strong>microphone</strong> and <strong>camera</strong>
+        so that your physician can both see and hear you during your visit.
+        <br>
+        <br>We will also test the <strong>internet connection</strong>.
+    </p>
+    <br>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <img src="{% static 'img-5.png' %}" alt="usc telecare test connection page" style="width:70%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> Setup Microphone &mdash; Click on the downward pointing arrow
+        <br>in the white box below where it shows a picture of a microphone.
+        <br>
+        <br>Click on a choice of microphone. You can try different choices.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'img-24.png' %}" alt="choose microphone" style="width:50%;">
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Tip:</strong> If the gray blocks change color when you talk, then
+        <br>your microphone is working!
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 2:</strong> Setup Camera &mdash; Click on the downward pointing arrow
+        <br>in the white box below where it shows a picture of a camera.
+        <br>
+        <br>Click on a choice of camera. You can try different choices.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'img-25.png' %}" alt="choose microphone" style="width:50%;">
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Tip:</strong> If your image appears on the computer screen, then
+        <br>your camera is working!
+        <br>
+        <br>
+        <strong style="font-size:110%;">Step 3:</strong>Test Connection &mdash; Click on the blue <strong>Test connection</strong>
+        <br>button to check your connection.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'img-26.png' %}" alt="choose microphone" style="width:50%;">
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>
+        Press <strong>Next</strong> to learn more!
+    </p>
+    <br>
+</div>
+{% endblock %}
