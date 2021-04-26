@@ -1,67 +1,27 @@
+{% extends "module_base_2b.html" %}
 {% load static %}
 
+{% block title %}
+Microphone and Camera
+{% endblock %}
 
+{% block mod_name %}
+Microphone and Camera
+{% endblock %}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'welcome.css' %}">
-    <title>Welcome</title>
-</head>
-<body style="background-color:#FFFFFF">
+{% block left_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
 
-<div class="jumbotron text-center" style="background-color:#8F001B">
-    <span>
-        <img src="{% static 'keck-logo.jpeg' %}" alt="Keck Medicine of USC logo" id="logo">
-    </span>
-    <span>
-        <h1 style="color:#FFB400; text-align:center; font-size:600%">USC TeleHELP</h1>
-    </span>
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>About Microphone and Camera</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>Microphone and Camera page would help to assure the camera and microphone accessibility of your device.</p><br>
+    <p>You will need to know if you are using an Android or iOS device. Click the button below to proceed.</p><br>
+    <a href="{% url 'cam_mic_system' %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Camera and Microphone Help</strong></a><br><br>
 </div>
-
-
-<hr style="width:80%; text-align:center;" color="#8a8a8a">
-<h1 style="text-align:center;">Microphone and Camera</h1><br>
-<h3 style="text-align:center;">~ Use your finger or mouse to press a button to learn more ~</h3><br>
-<hr style="width:80%; text-align:center;" color="#8a8a8a">
-
-
-
-<div class="text-center">
-    <a href="{% url 'about_telehelp' 0 %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>1 &rarr; HELP</strong></a><br><br>
-    <a href="{% url 'cam_mic_system' %}" class="btn btn-warning btn-lg" style="width:45%; font-size:185%;"><strong>2 &rarr; Camera and Microphone Help</strong></a><br><br>
-</div>
-
 <br>
-<br>
-
-
-<br>
-<div class="text-center">
-    <div class="btn-group d-flex" role="group">
-        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">&larr; Back</a>
-        <a href="{% url 'welcome' %}" class="btn btn-warning w-50" style="margin:5px; font-size:250%;">Home</a>
-    </div>
-</div>
-
-<br>
-<br>
-<br>
-
-<footer class="footer" style="background-color:#8F001B;">
-    <div class="container center">
-        <br><span class="center" style="color:#FFB400; text-align:center; font-size:150%">For questions or technical help, please contact the USC TeleCARE Support Team</span><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:160%">Mon - Fri, 8AM - 5PM PST &rarr; <strong>(833) 532-5872</strong></span><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:160%">After Hours, Holidays, or Weekends &rarr; <strong>(888) 585-8019</strong></span><br><br>
-        <span class="center" style="color:#FFB400; text-align:center; font-size:300%"><strong>Keck Medicine of USC</strong></span><br>
-    </div>
-</footer>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+{% endblock %}
