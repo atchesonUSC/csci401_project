@@ -25,7 +25,7 @@ SECRET_KEY = '#6wkug-u3e9)l36(&t42*l=-0gwagj68ss=jzdg_eczgxn0cus'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# ALLOWED_HOSTS = ['usc-telehelp.herokuapp.com', '127.0.0.1']
+# SECURITY WARNING: enable only certain hosts
 ALLOWED_HOSTS = []
 
 # Application definition
@@ -41,10 +41,8 @@ INSTALLED_APPS = [
     'about_telehelp_app',
     'browser_check_app',
     'camera_mic_app',
-    'help_app',
     'install_app',
-    'internet_check_app',
-    'main_menu_app',
+    'readiness_check_app',
     'waiting_room_app',
     'using_telecare_app',
 ]
@@ -131,5 +129,13 @@ USE_TZ = True
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / 'static',
 ]
+
+
+# (if HTTPS is enabled for this site) use a secure-only session cookie
+# SESSION_COOKIE_SECURE = True
+
+
+# (if HTTPS is enabled for this site) use a secure-only CSRF cookie
+# CSRF_COOKIE_SECURE = True

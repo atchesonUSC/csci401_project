@@ -1,4 +1,4 @@
-{% extends "module_base.html" %}
+{% extends "module_base_2b.html" %}
 {% load static %}
 
 {% block title %}
@@ -9,16 +9,8 @@ Finding your waiting room
 Finding Your Waiting Room
 {% endblock %}
 
-{% block right_btn_txt %}
-Done!
-{% endblock %}
-
 {% block left_btn_url %}
 {% url 'waiting_room' 1 %}
-{% endblock %}
-
-{% block right_btn_url %}
-{% url 'welcome' %}
 {% endblock %}
 
 {% block content %}

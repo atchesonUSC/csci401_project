@@ -1,4 +1,4 @@
-{% extends "module_base.html" %}
+{% extends "module_base_2b.html" %}
 {% load static %}
 
 {% block title %}
@@ -9,16 +9,8 @@ Using USC TeleCARE
 Using USC TeleCARE
 {% endblock %}
 
-{% block right_btn_txt %}
-Done!
-{% endblock %}
-
 {% block left_btn_url %}
 {% url 'using_telecare' 7 %}
-{% endblock %}
-
-{% block right_btn_url %}
-{% url 'welcome' %}
 {% endblock %}
 
 {% block content %}
@@ -47,13 +39,7 @@ Done!
     </p>
     <br>
     <br>
-    <img src="{% static 'img-6.png' %}" alt="waiting room" style="width:60%;">
-    <br>
-    <br>
-    <br>
-    <p>
-        All set! Press <strong>Done!</strong> to return Home
-    </p>
-    <br>
+    <img src="{% static 'img-6.png' %}" alt="waiting room" style="width:60%;"><br><br><br>
 </div>
+<br>
 {% endblock %}

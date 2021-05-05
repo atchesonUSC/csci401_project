@@ -1,4 +1,4 @@
-{% extends "module_base.html" %}
+{% extends "module_base_2b.html" %}
 {% load static %}
 
 {% block title %}
@@ -9,16 +9,8 @@ Using USC TeleCARE
 Using USC TeleCARE
 {% endblock %}
 
-{% block right_btn_txt %}
-Done!
-{% endblock %}
-
 {% block left_btn_url %}
 {% url 'using_telecare' 4 %}
-{% endblock %}
-
-{% block right_btn_url %}
-{% url 'welcome' %}
 {% endblock %}
 
 {% block content %}
@@ -33,22 +25,13 @@ Done!
     </p>
     <br>
     <br>
-    <img src="{% static 'img-21.png' %}" alt="usc telecare connection test complete" style="width:30%;">
-    <br>
-    <br>
+    <img src="{% static 'img-21.png' %}" alt="usc telecare connection test complete" style="width:30%;"><br><br><br>
     <p>
-        You may press the blue <strong>Done</strong> button in the upper-left of the page.
-        <br>
-        <br>
+        You may press the blue <strong>Done</strong> button in the upper-left of your device screen,
+        like in the picture shown above.<br><br>
         If your connection quality is not good, please try moving to a
-        <br>different location, if possible.
-        <br>
-    </p>
-    <br>
-    <br>
-    <p>
-        All set! Press <strong>Done!</strong> to return Home
-    </p>
-    <br>
+        <br>different location, if possible.<br>
+    </p><br><br>
 </div>
+<br>
 {% endblock %}

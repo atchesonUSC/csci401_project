@@ -1,0 +1,39 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Internet Check
+{% endblock %}
+
+{% block mod_name %}
+Readiness Check
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'welcome' %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br><h1>USC TeleCARE Support Team Help</h1>
+    <hr style="width:70%; text-align:center;" color="#8a8a8a"><br>
+    <p>For a smooth appointment, the USC TeleCARE Support Team wants to help to make sure that
+        your technology is prepared for your appointment.
+    </p>
+    <br>
+    <br>
+    <img src="{% static 'internet-help.png' %}" alt="Internet Support Staff" style="width:50%;">
+    <br>
+    <br>
+    <br>
+    <p>Please call our USC TeleCARE Support Team
+        <strong>at least two days</strong> prior to your appointment, and we'll help check.
+    </p>
+    <br>
+    <br>
+    <p style="font-size:250%;">USC TeleCARE Support Team &rarr; <strong>1-888-585-8019</strong></p>
+    <br>
+    <br>
+</div>
+<br>
+{% endblock %}
