@@ -1,0 +1,74 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Microphone and Camera
+{% endblock %}
+
+{% block mod_name %}
+Microphone and Camera
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'cam_mic' 4 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Enable Camera Walkthrough (iOS)</h1>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>To use the camera for your upcoming telehealth
+        <br>appointment, please follow the below steps.
+    </p><br>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 1:</strong> Go to the settings app on your
+        <br>device and tap the icon to open it.
+    </p>
+    <br>
+    <img src="{% static 'settings.jpeg' %}" alt="settings app icon" style="width:50%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 2:</strong> In the settings app, scroll until you
+        <br>see the <strong>USC TeleCARE</strong> icon (should be 
+        <br>toward the bottom of the page).
+    </p>
+    <br>
+    <img src="{% static 'settings-telecare.png' %}" alt="settings app usc telecare app" style="width:50%;">
+    <br>
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 3:</strong> Tap the arrow next to the icon.
+    </p>
+    <br>
+    <img src="{% static 'arrow.png' %}" alt="settings arrow" style="width:50%">
+    <br>
+    <br>
+    <br>
+    <p>
+        <strong style="font-size:110%;">Step 4:</strong> Tap the toggle next to "camera" 
+        <br>to enable it.
+    </p>
+    <br>
+    <img src="{% static 'enable-cam.png' %}" alt="camera toggle" style="width:50%">
+    <br>
+    <br>
+    <br>
+    <p>
+        The toggle should turn <strong>green</strong> when the 
+        <br>camera is enabled:
+    </p>
+    <br>
+    <img src="{% static 'toggle-cam-on.png' %}" alt="camera toggled on" style="width:50%">
+    <br>
+    <br>
+    <br>
+</div>
+<br>
+{% endblock %}

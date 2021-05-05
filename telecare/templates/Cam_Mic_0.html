@@ -9,8 +9,16 @@ Microphone and Camera
 Microphone and Camera
 {% endblock %}
 
+{% block right_btn_txt %}
+Next &rarr;
+{% endblock %}
+
 {% block left_btn_url %}
 {% url 'welcome' %}
+{% endblock %}
+
+{% block right_btn_url %}
+{% url 'cam_mic' 1 %}
 {% endblock %}
 
 {% block content %}
@@ -21,7 +29,7 @@ Microphone and Camera
     <br>
     <p>Microphone and Camera page would help to assure the camera and microphone accessibility of your device.</p><br>
     <p>You will need to know if you are using an Android or iOS device. Click the button below to proceed.</p><br>
-    <a href="{% url 'cam_mic_system' %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Camera and Microphone Help</strong></a><br><br>
+    <a href="{% url 'cam_mic' 1 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Camera and Microphone Help</strong></a><br><br>
 </div>
 <br>
 {% endblock %}

@@ -1,0 +1,27 @@
+{% extends "module_base_2b.html" %}
+{% load static %}
+
+{% block title %}
+Microphone and Camera
+{% endblock %}
+
+{% block mod_name %}
+Microphone and Camera
+{% endblock %}
+
+{% block left_btn_url %}
+{% url 'cam_mic' 2 %}
+{% endblock %}
+
+{% block content %}
+<div class="container text-center block_content">
+    <br>
+    <h1>Camera and Microphone</h1>
+    <h2>(First Time iOS Users)</h2>
+    <hr style="width:50%; text-align:center;" color="#8a8a8a">
+    <a href="{% url 'cam_mic' 10 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Enable Camera</strong></a><br><br>
+    <a href="{% url 'cam_mic' 11 %}" class="btn btn-warning btn-lg" style="width:60%; font-size:225%; color:"><strong>Enable Microphone</strong></a><br><br>
+    <br>
+</div>
+<br>
+{% endblock %}
